@@ -1,0 +1,21 @@
+{
+    "name": "rao",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "npm run server",
+        "server": "node app.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/LiPinghai/rao.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/LiPinghai/rao/issues"
+    },
+    "homepage": "https://github.com/LiPinghai/rao#readme"
+}

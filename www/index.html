@@ -1,0 +1,68 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><title>头条推荐</title><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"><meta name=format-detection content="telephone=no"><style type=text/css>* {
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      box-sizing: border-box;
+    }
+    
+    html,
+    body {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      -webkit-appearance: none;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      font-family: 'Microsoft YaHei', "Arial", "sans-serif";
+      padding: 0;
+      margin: 0;
+    }</style><link href=./css/app.fb4c7cec17f3fe407166537fdea3e88e.css rel=stylesheet></head><body><iframe id=iframeForSetTitle style="display: none"></iframe><div id=app></div><script type=text/javascript>(function(doc, win) {
+      var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function() {
+          var clientWidth = docEl.clientWidth;
+          if (!clientWidth) return;
+          docEl.style.fontSize = 20 * (clientWidth / 640) + 'px';
+        };
+
+      if (!doc.addEventListener) return;
+      win.addEventListener(resizeEvt, recalc, false);
+      doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);</script><script type=text/javascript src=http://lib.wuedc.com/cdn/js/jweixin/1.0.0/jweixin.js></script><script type=text/javascript>window.zhuge = window.zhuge || [];
+    window.zhuge.methods = "_init debug identify track trackLink trackForm page".split(" ");
+    window.zhuge.factory = function(b) {
+      return function() {
+        var a = Array.prototype.slice.call(arguments);
+        a.unshift(b);
+        window.zhuge.push(a);
+        return window.zhuge;
+      }
+    };
+    for (var i = 0; i < window.zhuge.methods.length; i++) {
+      var key = window.zhuge.methods[i];
+      window.zhuge[key] = window.zhuge.factory(key);
+    }
+    window.zhuge.load = function(b, x) {
+      if (!document.getElementById("zhuge-js")) {
+        var a = document.createElement("script");
+        var verDate = new Date();
+        var verStr = verDate.getFullYear().toString() +
+          verDate.getMonth().toString() + verDate.getDate().toString();
+
+        a.type = "text/javascript";
+        a.id = "zhuge-js";
+        a.async = !0;
+        a.src = (location.protocol == 'http:' ? "http://sdk.zhugeio.com/zhuge.min.js?v=" : 'https://zgsdk.zhugeio.com/zhuge.min.js?v=') + verStr;
+        a.onerror = function() {
+          window.zhuge.identify = window.zhuge.track = function(ename, props, callback) {
+            if (callback && Object.prototype.toString.call(callback) === '[object Function]') callback();
+          };
+        };
+        var c = document.getElementsByTagName("script")[0];
+        c.parentNode.insertBefore(a, c);
+        window.zhuge._init(b, x)
+      }
+    };
+    window.zhuge.load('app key');</script><script type=text/javascript src=./js/manifest.6916d62ce54a1582b0c0.js></script><script type=text/javascript src=./js/vendor.d1a826fd71a1354cc383.js></script><script type=text/javascript src=./js/app.ceef3a24c7fb20eb2b6e.js></script></body></html>
